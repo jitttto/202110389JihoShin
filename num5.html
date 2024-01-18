@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>OpenCV를 이용하여 이미지처리를 통해 자율주행하기</title>
+		<link href = "design.css" text = "text/css" rel = "stylesheet">
+		<style>
+			span {font-weight : bold;}
+		</style>
+	</head>
+	<body>
+		<h3 id = "5">OpenCV를 이용하여 이미지처리를 통해 자율주행하기</h3>
+		<p>우선, 터미널에 'pip install opencv-python'을 입력하여 영상처리를 위한 라이브러리를 설치한다. <br><br>
+		<span>-색상필터링으로 검정색 선 추출하기.</span><br>
+		영상처리에서 검정색 선 부분을 찾아 마스크하고, 흰색 부분을 검정색으로 마스크하는 코드를 작성하여 제대로 필터링하는지 확인한다. <br>
+		<img src = "C:\Users\ssh03\OneDrive\바탕 화면\호지신\색상 필터링 코드.PNG" width = "600" height = "800">
+		<img src = "C:\Users\ssh03\OneDrive\바탕 화면\호지신\색상필터링12.jpg" width = "800" height = "600"><br><br>
+		<span>-영상처리를 통한 무게중심 찾기</span><br>
+		마스크된 이미지를 이용하여 무게 중심을 구하여 숫자로 출력하는 코드를 작성한다. <br>
+		이때, 차선의 중앙에 무게중심이 있을 때는 -10~+10 정도의 무게중심 값을 출력하고,
+		차선의 왼쪽으로 치우쳐지면 +값이 커진다. 반대로 오른쪽으로 치우쳐지면 -값이 커진다.<br>
+		<img src = "C:\Users\ssh03\OneDrive\바탕 화면\호지신\무게중심 코드.PNG" width = "600" height = "800">
+		<img src = "C:\Users\ssh03\OneDrive\바탕 화면\호지신\무게중심1.jpg" width = "720" height = "540">
+		<img src = "C:\Users\ssh03\OneDrive\바탕 화면\호지신\무게중심2.jpg" width = "720" height = "540">
+		<br><br>
+		<span>-영상처리를 통한 자율주행</span><br>
+		무게중심값이 -10 이하이면 좌회전, +10 이상이면 우회전, -10이상, +10이하이면 직진할 수 있도록 코드를 작성하여 무게중심을 이용한 자율주행을 실시하게 한다. <br><img src = "C:\Users\ssh03\OneDrive\바탕 화면\호지신\자2 코드.PNG" width = "600" height = "800">
+		<video src = "C:\Users\ssh03\OneDrive\바탕 화면\호지신\영상7.mp4" width = "600" height = "800" autoplay loop muted></video>
+		</p>
+	</body>
+</html>
