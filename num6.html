@@ -6,6 +6,27 @@
 	</head>
 	<body>
 		<h3 id = "6">인공지능을 이용하여 객체 검출 자율주행하기</h3>
-				<p>내용 입력</p>
+		<p>이번 프로젝트의 최종 목표이다. 이미 조성한 환경에서 표지판이 나타났을 때 인공지능이 객체를 검출하여 자율주행하는 모습을 보일 것이다.
+		준비된 표지판(정지, 감속, 50속도), 사람, 자동차 그리고 오토바이를 프린트하여 준비한다.<br>
+		<img src = "C:\Users\ssh03\OneDrive\바탕 화면\호지신\표지판.jpg" width = "800" height = "600"><br>
+		객체 검출을 위해서는 신경망 아키텍처 중 하나인 YOLO(You Only Look Once)를 이용할 것이다. <br>
+		이미 기존 모델에서 정지 표지판, 사람, 자동차 그리고 오토바이는 학습이 되어 있어 바로 YOLO를 사용해도 우리의 자동차가 인식을 한다.<br>
+		<img src = "C:\Users\ssh03\OneDrive\바탕 화면\호지신\표지판2.jpg" width = "600" height = "800">
+		<img src = "C:\Users\ssh03\OneDrive\바탕 화면\호지신\표지판3.jpg" width = "600" height = "800"><br>
+		우리는 새로운 객체를 학습시키기 위해 사진을 다양한 각도로 촬영을 하고, github사이트에서 라벨링(객체의 이름을 부여하는 과정)을 진행하였다.<br>
+		그 이후 'Colab' 사이트에서 라벨링한 모델들을 학습시킨다. <br>
+		학습한 객체를 전부 검출하는 코드를 작성하여 자율주행 자도차가 객체를 검출하는지 확인한다. <br>
+		<img src = "C:\Users\ssh03\OneDrive\바탕 화면\호지신\라벨1.jpg" width = "640" height = "480">
+		<img src = "C:\Users\ssh03\OneDrive\바탕 화면\호지신\라벨2.jpg" width = "640" height = "480">
+		<img src = "C:\Users\ssh03\OneDrive\바탕 화면\호지신\라벨3.jpg" width = "640" height = "480"><br>
+		앞선 단계에서 무게중심을 사용하여 주행한 코드에 객체를 탐지하는 코드를 합쳐 최종적으로 자율주행한다. <br>
+		<img src = "C:\Users\ssh03\OneDrive\바탕 화면\호지신\소스1-1.PNG" width = "600" height = "800">
+		<img src = "C:\Users\ssh03\OneDrive\바탕 화면\호지신\소스1-2.PNG" width = "600" height = "800"><br>
+		<img src = "C:\Users\ssh03\OneDrive\바탕 화면\호지신\소스2-1.PNG" width = "600" height = "800">
+		<img src = "C:\Users\ssh03\OneDrive\바탕 화면\호지신\소스2-2.PNG" width = "600" height = "800"><br>
+		<video src = "C:\Users\ssh03\OneDrive\바탕 화면\호지신\최영1.mp4" width = "600" height = "800" autoplay loop muted></video>
+		<video src = "C:\Users\ssh03\OneDrive\바탕 화면\호지신\최영2.mp4" width = "600" height = "800" autoplay loop muted></video>
+		<video src = "C:\Users\ssh03\OneDrive\바탕 화면\호지신\최영3.mp4" width = "600" height = "800" autoplay loop muted></video><br>
+		</p>
 	</body>
 </html>
